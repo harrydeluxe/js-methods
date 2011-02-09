@@ -6,7 +6,7 @@
 * This extensions doesn't depend on any other code or overwrite existing methods.
 *
 *
-* Copyright (c) 2007 Harald Hanek (http://js-methods.googlecode.com)
+* Copyright (c) 2007 Harald Hanek (https://github.com/harrydeluxe/js-methods)
 *
 * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
 * and GPL (http://www.gnu.org/licenses/gpl.html) licenses.
