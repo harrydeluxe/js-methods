@@ -140,7 +140,7 @@ Extends string prototype with the following methods: encodeBase64, decodeBase64
 Encodes a string using Base64.
 
 ```javascript
-"JavaScript==".encode_base64(); // "SmF2YVNjcmlwdA=="
+"JavaScript".encodeBase64(); // "SmF2YVNjcmlwdA=="
 ```
 
 
@@ -148,7 +148,7 @@ Encodes a string using Base64.
 Decodes a Base64 encoded string to a byte string.
 
 ```javascript
-"SmF2YVNjcmlwdA==".decode_base64(); // "JavaScript"
+"SmF2YVNjcmlwdA==".decodeBase64(); // "JavaScript"
 ```
 
 
