@@ -1,20 +1,9 @@
 /**
 * Array prototype extensions.
-* Extends array prototype with the following methods:
-* contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
-* 
-* This extensions doesn't depend on any other code or overwrite existing methods.
-* 
 *
-* Copyright (c) 2007 Harald Hanek (https://github.com/harrydeluxe/js-methods)
-*
-* Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-* and GPL (http://www.gnu.org/licenses/gpl.html) licenses.
-* 
-* @author Harald Hanek
 * @version 0.9
-* @lastchangeddate 10. October 2007 15:46:06
-* @revision 876
+* @copyright Copyright (c) 2007-2012 Harald Hanek
+* @license MIT (http://harrydeluxe.mit-license.org)
 */
 
 (function(){

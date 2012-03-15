@@ -1,27 +1,12 @@
 /**
 * Char extensions convert between characters and decimal Numeric Character References.
-* Extends string prototype with the following methods:
-* char2dec, dec2char
-* 
-* This extensions doesn't depend on any other code or overwrite existing methods.
-*
 *
 * The Initial Developer of the Original Code is
 * unknown
 *
-*
-* Contributor(s):
-* Harald Hanek <harald.hanek@gmail.com>
-*
-* Copyright (c) 2007 Harald Hanek (https://github.com/harrydeluxe/js-methods)
-*
-* Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-* and GPL (http://www.gnu.org/licenses/gpl.html) licenses.
-* 
-* @author Harald Hanek
 * @version 0.9
-* @lastchangeddate 10. October 2007 18:00:46
-* @revision 876
+* @copyright Copyright (c) 2007-2012 Harald Hanek
+* @license MIT (http://harrydeluxe.mit-license.org)
 */
 
 (function(){

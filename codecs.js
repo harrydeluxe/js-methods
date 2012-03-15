@@ -1,20 +1,9 @@
 /**
 * Codecs extensions.
-* Extends string prototype with the following methods:
-* decodeBase64, encodeBase64, decodeUTF8, encodeUTF8
-* 
-* This extensions doesn't depend on any other code or overwrite existing methods.
 *
-*
-* Copyright (c) 2007 Harald Hanek (https://github.com/harrydeluxe/js-methods)
-*
-* Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-* and GPL (http://www.gnu.org/licenses/gpl.html) licenses.
-* 
-* @author Harald Hanek
 * @version 0.9
-* @lastchangeddate 09. October 2007 16:13:10
-* @revision 876
+* @copyright Copyright (c) 2007-2012 Harald Hanek
+* @license MIT (http://harrydeluxe.mit-license.org)
 */
 
 (function(){

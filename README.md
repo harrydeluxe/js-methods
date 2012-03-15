@@ -2,7 +2,7 @@ JS-methods for JavaScript bundles a lot of extensions to the language's core cla
 
 
 
-Methods
+string.js methods
 -------
 
 ### camelize()
