@@ -2,7 +2,7 @@
 	"author": "Harald Hanek <hanek@delacap.com> (https://github.com/harrydeluxe/js-methods/)",
 	"name": "js-methods",
 	"description": "JS-methods for JavaScript bundles a lot of extensions to the language's core classes to simplify development for the browser or for Node.js. This extensions doesn't depend on any other code or overwrite existing methods.",
-	"version": "0.9.0",
+	"version": "0.9.1",
 	"keywords": ["js-methods", "array", "base64", "char", "md5", "string", "utf8", "hash", "encryption"],
 	"main": "./index.js",
 	"bin": {
