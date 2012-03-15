@@ -1,9 +1,11 @@
-JS-methods for JavaScript bundles a lot of extensions to the language's core classes to simplify development. This extensions doesn't depend on any other code or overwrite existing methods.
+JS-methods for JavaScript bundles a lot of extensions to the language's core classes to simplify development for the browser or for Node.js. This extensions doesn't depend on any other code or overwrite existing methods.
 
 
 
 string.js methods
 -------
+Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
+The `string.min.js` is super lightweight (< 1k Gzipped).
 
 ### camelize()
 
