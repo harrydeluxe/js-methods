@@ -130,3 +130,35 @@ Returns a string that is no longer than a certain length.
 "JavaScript ".truncate(5); // "Ja..."
 "JavaScript ".truncate(5, "#"); // "Java#"
 ```
+
+
+base64.js methods
+-------
+Extends string prototype with the following methods: encodeBase64, decodeBase64
+
+### encodeBase64()
+Encodes a string using Base64.
+
+```javascript
+"JavaScript==".encode_base64(); // "SmF2YVNjcmlwdA=="
+```
+
+
+### decodeBase64()
+Decodes a Base64 encoded string to a byte string.
+
+```javascript
+"SmF2YVNjcmlwdA==".decode_base64(); // "JavaScript"
+```
+
+
+md5.js methods
+-------
+Extends string prototype with the following method: md5
+
+### md5()
+Returns the md5 hash of the given string.
+
+```javascript
+"JavaScript".md5(); // "686155af75a60a0f6e9d80c1f7edd3e9"
+```
