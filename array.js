@@ -50,8 +50,8 @@
 	/**
 	* Returns the array without the elements in 'elements'.
 	* 
-	* @example [1, 2, 1, 4, 5, 4].contains([1, 2, 4]);
-	* @result true
+	* @example [1, 2, 1, 4, 5, 4].exfiltrate([1, 2, 4]);
+	* @result 5
 	*
 	* @name exfiltrate
 	* @param Array elements
