@@ -5,7 +5,7 @@ Installation
 -------
 npm install --production js-methods
 
-Usage
+Usage for Node.js
 -------
 ```javascript
 require('string'); // for string methods
