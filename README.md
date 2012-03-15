@@ -8,8 +8,8 @@ npm install --production js-methods
 Usage for Node.js
 -------
 ```javascript
-require('string'); // for string methods
-require('array'); // for array methods
+require('js-methods'); // Now you have all methods to dispose. Try it!
+"javascript".md5(); // 'de9b9ed78d7e2e1dceeffee780e2f919'
 ```
 
 string.js methods
