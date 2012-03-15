@@ -5,6 +5,7 @@ JS-methods for JavaScript bundles a lot of extensions to the language's core cla
 string.js methods
 -------
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
+
 The `string.min.js` is super lightweight (< 1k Gzipped).
 
 ### camelize()
