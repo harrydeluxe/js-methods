@@ -23,7 +23,7 @@
 	/**
 	* Decodes a Base64 encoded string to a byte string.
 	*
-	* @example "SmF2YVNjcmlwdA==".decode_base64();
+	* @example "SmF2YVNjcmlwdA==".decodeBase64();
 	* @result "JavaScript"
 	*
 	* @name decodeBase64
@@ -58,7 +58,7 @@
 	/**
 	* Encodes a string using Base64.
 	*
-	* @example "JavaScript==".encode_base64();
+	* @example "JavaScript".encodeBase64();
 	* @result "SmF2YVNjcmlwdA=="
 	*
 	* @name encodeBase64
