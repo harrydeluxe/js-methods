@@ -34,7 +34,7 @@ Converts all adjacent whitespace characters to a single space.
 ```
 
 
-### format(ss) ###
+### format(substrings) ###
 
 Substitute substrings from an array into a format String that includes '%1'-type specifiers
 
@@ -49,4 +49,71 @@ Removes leading whitespace.
 
 ```javascript
 "  My name is Harry!".ltrim(); // "My name is Harry!"
+```
+
+
+### pad(Int length, String ch, Int direction) ###
+Pad a string up to a given length. Padding characters are added to the left of the string.
+
+```javascript
+"22".pad(4, '#'); // "##22"
+"22".pad(4, '#', 1); // "22##"
+```
+
+
+### remove(Int start, Int length) ###
+Removes a specified length of characters from a given postion.
+
+```javascript
+"JavaScript".remove(4, 6); // "Java"
+```
+
+
+### repeat(Int count, String separator) ###
+Returns 'str' repeated 'count' times, optionally placing 'separator' between each repetition
+
+```javascript
+"Hello".repeat(5); // "HelloHelloHelloHelloHello"
+"Hello".repeat(5,'#'); // "Hello#Hello#Hello#Hello#Hello"
+```
+
+
+### reverse() ###
+Reverses the characters in the specified string.
+
+```javascript
+"Hello".reverse(); // "olleH"
+```
+
+
+### rtrim() ###
+Removes trailing whitespace.
+
+```javascript
+"My name is Harry!   ".rtrim(); // "My name is Harry!"
+```
+
+
+### stripTags() ###
+Returns a string with all HTML tags stripped.
+
+```javascript
+"<div id='type'>JavaScript</div>".stripTags(); // "JavaScript"
+```
+
+
+### trim() ###
+Returns a String with with leading and trailing whitespace removed.
+
+```javascript
+" My name is Harry!   ".trim(); // "My name is Harry!"
+```
+
+
+### truncate(Number length, String suffix) ###
+Returns a string that is no longer than a certain length.
+
+```javascript
+"JavaScript ".truncate(5); // "Ja..."
+"JavaScript ".truncate(5, "#"); // "Java#"
 ```
