@@ -28,6 +28,7 @@
 	* @result "My name is Harry!"
 	*
 	* @name trim
+	* @param String	ch Optionally, the stripped characters can also be specified using the ch parameter.
 	* @return String
 	*/
 	append("trim", function(ch){
@@ -43,6 +44,7 @@
 	* @result "My name is Harry!"
 	*
 	* @name ltrim
+	* @param String	ch Optionally, the stripped characters can also be specified using the ch parameter.
 	* @return String
 	*/
 	append("ltrim", function(ch){
@@ -58,6 +60,7 @@
 	* @result "My name is Harry!"
 	*
 	* @name rtrim
+	* @param String	ch Optionally, the stripped characters can also be specified using the ch parameter.
 	* @return String
 	*/
 	append("rtrim", function(ch){ 
