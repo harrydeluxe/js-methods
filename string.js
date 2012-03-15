@@ -13,15 +13,16 @@
 	*
 	* @private
 	*/
-	function append(name, method)
+	function append(name, method, force)
 	{
-		if(!String.prototype[name])
+		if(!String.prototype[name] || force)
 			String.prototype[name] = method;
 	}
 
 
 	/**
 	* Returns a String with with leading and trailing whitespace removed.
+	* ATTENTION: This method overwrite the existing method 'trim'
 	*
 	* @example " My name is Harry!   ".trim();
 	* @result "My name is Harry!"
@@ -29,11 +30,12 @@
 	* @name trim
 	* @return String
 	*/
-	append("trim", function(){ 
-		return this.replace(/(^\s+|\s+$)/g, "");
-	});
+	append("trim", function(ch){
+		ch = !ch ? ' \\s\u00A0' : (ch + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '$1');
+		return this.replace(new RegExp('^[' + ch + ']+|[' + ch + ']+$', 'g'), '');
+	}, true);
 
-
+	
 	/**
 	* Removes leading whitespace.
 	*
@@ -43,8 +45,9 @@
 	* @name ltrim
 	* @return String
 	*/
-	append("ltrim", function(){ 
-		return this.replace(/^\s*/g, "");
+	append("ltrim", function(ch){
+		ch = !ch ? ' \\s\u00A0' : (ch + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '$1');
+    	return this.replace(new RegExp('^[' + ch + ']+', 'g'), '');
 	});
 
 
@@ -57,8 +60,9 @@
 	* @name rtrim
 	* @return String
 	*/
-	append("rtrim", function(){ 
-		return this.replace( /\s*$/g, "") ;
+	append("rtrim", function(ch){ 
+		ch = !ch ? ' \\s\u00A0' : (ch + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '\\$1');
+    	return this.replace(new RegExp('[' + ch + ']+$', 'g'), '');    
 	});
 
 
