@@ -7,10 +7,10 @@ npm install --production js-methods
 
 Usage
 -------
+```javascript
 require('string'); // for string methods
 require('array'); // for array methods
-...
-
+```
 
 string.js methods
 -------
