@@ -1,6 +1,16 @@
 JS-methods for JavaScript bundles a lot of extensions to the language's core classes to simplify development for the browser or for Node.js. This extensions doesn't depend on any other code or overwrite existing methods.
 
 
+Installation
+-------
+npm install --production js-methods
+
+Usage
+-------
+require('string'); // for string methods
+require('array'); // for array methods
+...
+
 
 string.js methods
 -------
