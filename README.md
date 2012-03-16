@@ -1,18 +1,29 @@
-JS-methods for JavaScript bundles a lot of extensions to the language's core classes to simplify development for the browser or for Node.js. This extensions doesn't depend on any other code or overwrite existing methods.
+# js-methods
+**js-methods** for JavaScript bundles a lot of extensions to the language's core classes to simplify development for the browser or for Node.js. This extensions doesn't depend on any other code or overwrite existing methods.
 
 
+
+Usage
+-------
+#### Browsers
+If you need 'string' and 'array' methods, put this lines to your scripts.
+```html
+<script src="https://raw.github.com/harrydeluxe/js-methods/master/string.min.js"></script>
+<script src="https://raw.github.com/harrydeluxe/js-methods/master/array.min.js"></script>
+```
+
+#### Node.js
 Installation
--------
+```javascript
 npm install --production js-methods
+```
 
-Usage for Node.js
--------
 ```javascript
 require('js-methods'); // Now you have all methods to dispose. Try it!
 "javascript".md5(); // 'de9b9ed78d7e2e1dceeffee780e2f919'
 ```
 
-string.js methods
+string.js
 -------
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
@@ -130,7 +141,7 @@ Returns a string that is no longer than a certain length.
 ```
 
 
-base64.js methods
+base64.js
 -------
 Extends string prototype with the following methods: encodeBase64, decodeBase64
 
@@ -150,7 +161,7 @@ Decodes a Base64 encoded string to a byte string.
 ```
 
 
-md5.js methods
+md5.js
 -------
 Extends string prototype with the following method: md5
 
@@ -162,7 +173,7 @@ Returns the md5 hash of the given string.
 ```
 
 
-utf8.js methods
+utf8.js
 -------
 Extends string prototype with the following method: utf8
 
@@ -181,7 +192,7 @@ Decodes a utf-8 encoded string back into multi-byte characters.
 ```
 
 
-char.js methods
+char.js
 -------
 Char extensions convert between characters and decimal Numeric Character References.
 Extends string prototype with the following methods: char2dec, dec2char
@@ -201,7 +212,7 @@ Convert Decimal to Character.
 ```
 
 
-array.js methods
+array.js
 -------
 Extends array prototype with the following methods: contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
 
@@ -329,7 +340,6 @@ Tests whether some element in the array passes the test implemented by the provi
 	return element >= 100;
 }); // true;
 ```
-
 
 
 #### unique()
