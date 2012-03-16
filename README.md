@@ -31,8 +31,7 @@ require('js-methods'); // Now you have all methods to dispose. Try it!
 
 Docs
 ----
- 
- 
+
 
 ## string.js
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
