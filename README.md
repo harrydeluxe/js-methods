@@ -4,7 +4,7 @@
 
 
 Usage
------
+-------------
 #### Browsers
 
 If you need 'string' and 'array' methods, put this lines to your script.
@@ -30,7 +30,7 @@ require('js-methods'); // Now you have all methods to dispose. Try it!
 ```
 
 Docs
-----
+-------------
 
 
 ## string.js
