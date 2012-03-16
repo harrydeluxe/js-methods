@@ -30,14 +30,16 @@ require('js-methods'); // Now you have all methods to dispose. Try it!
 ```
 
 Docs
-====
+----
+ 
+ 
 
 ## string.js
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
 
-##### camelize()
+#### camelize()
 Converts a string separated by dashes and/or underscores into a camelCase equivalent. For instance, 'java-script' would be converted to 'javaScript'.
 
 ```javascript
@@ -47,7 +49,7 @@ Converts a string separated by dashes and/or underscores into a camelCase equiva
 ```
 
 
-##### capitalize()
+#### capitalize()
 Capitalizes the first letter of a string and downcases all the others.
 
 ```javascript
@@ -149,7 +151,7 @@ Returns a string that is no longer than a certain length.
 ```
 
 
-### base64.js
+## base64.js
 Extends string prototype with the following methods: encodeBase64, decodeBase64
 
 #### encodeBase64()
@@ -168,8 +170,7 @@ Decodes a Base64 encoded string to a byte string.
 ```
 
 
-md5.js
--------
+## md5.js
 Extends string prototype with the following method: md5
 
 #### md5()
@@ -180,8 +181,7 @@ Returns the md5 hash of the given string.
 ```
 
 
-utf8.js
--------
+## utf8.js
 Extends string prototype with the following method: utf8
 
 #### encodeUTF8()
@@ -199,8 +199,7 @@ Decodes a utf-8 encoded string back into multi-byte characters.
 ```
 
 
-char.js
--------
+## char.js
 Char extensions convert between characters and decimal Numeric Character References.
 Extends string prototype with the following methods: char2dec, dec2char
 
@@ -219,8 +218,7 @@ Convert Decimal to Character.
 ```
 
 
-array.js
--------
+## array.js
 Extends array prototype with the following methods: contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
 
 #### contains(`Array` elements)
