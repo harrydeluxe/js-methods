@@ -294,7 +294,7 @@ Inserts an item at the specified index in the array
 ```
 
 
-### map(Function fn, Object scope)
+### map(`Function` fn, `Object` scope)
 Creates a new array with the results of calling a provided function on every element in this array.
 
 ```javascript
@@ -306,7 +306,7 @@ Creates a new array with the results of calling a provided function on every ele
 ```
 
 
-### removeAt(Number index)
+### removeAt(`Number` index)
 Remove an item from a specified index in the array.
 
 ```javascript
@@ -322,7 +322,7 @@ Randomize the order of the elements in the Array.
 ```
 
 
-### some(Function fn, Object scope)
+### some(`Function` fn, `Object` scope)
 Tests whether some element in the array passes the test implemented by the provided function.
 
 ```javascript
