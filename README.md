@@ -56,12 +56,13 @@ Substitute substrings from an array into a format String that includes '%1'-type
 ```
 
 
-### ltrim() ###
+### ltrim(String ch) ###
 
 Removes leading whitespace.
 
 ```javascript
 "  My name is Harry!".ltrim(); // "My name is Harry!"
+"/this/is/a/path/".ltrim("/"); // "this/is/a/path/"
 ```
 
 
@@ -99,11 +100,12 @@ Reverses the characters in the specified string.
 ```
 
 
-### rtrim() ###
+### rtrim(String ch) ###
 Removes trailing whitespace.
 
 ```javascript
 "My name is Harry!   ".rtrim(); // "My name is Harry!"
+"/this/is/a/path//".rtrim("/"); // "/this/is/a/path"
 ```
 
 
@@ -115,11 +117,12 @@ Returns a string with all HTML tags stripped.
 ```
 
 
-### trim() ###
+### trim(String ch) ###
 Returns a String with with leading and trailing whitespace removed.
 
 ```javascript
 " My name is Harry!   ".trim(); // "My name is Harry!"
+"/this/is/a/path//".trim("/"); // "this/is/a/path"
 ```
 
 
@@ -162,3 +165,26 @@ Returns the md5 hash of the given string.
 ```javascript
 "JavaScript".md5(); // "686155af75a60a0f6e9d80c1f7edd3e9"
 ```
+
+
+utf8.js methods
+-------
+Extends string prototype with the following method: utf8
+
+### encodeUTF8()
+Encodes a multi-byte string into utf-8 multiple single-byte characters.
+
+```javascript
+"Straße".encodeUTF8(); // "StraÃe"
+```
+
+### decodeUTF8()
+Decodes a utf-8 encoded string back into multi-byte characters.
+
+```javascript
+"StraÃe".decodeUTF8(); // "Straße"
+```
+
+
+
+

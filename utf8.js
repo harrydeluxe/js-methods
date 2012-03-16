@@ -23,8 +23,8 @@
 	/**
 	* Decodes a utf-8 encoded string back into multi-byte characters.
 	*
-	* @example "http://www.delacap.com/products/?very%20nice".encode_uri();
-	* @result "http://www.delacap.com/products/?very nice"
+	* @example "\xE2\x82\xAC".decodeUTF8();
+	* @result "€"
 	*
 	* @name decodeUTF8
 	* @return String
@@ -52,8 +52,8 @@
 	/**
 	* Encodes a multi-byte string into utf-8 multiple single-byte characters.
 	*
-	* @example "http://www.delacap.com/products/?very%20nice".encode_uri();
-	* @result "http://www.delacap.com/products/?very nice"
+	* @example "Straße".encodeUTF8(); 
+	* @result "StraÃe"
 	*
 	* @name encodeUTF8
 	* @return String
