@@ -18,7 +18,7 @@ Extends string prototype with the following methods: camelize, capitalize, colla
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
 
-### camelize()
+#### camelize()
 Converts a string separated by dashes and/or underscores into a camelCase equivalent. For instance, 'java-script' would be converted to 'javaScript'.
 
 ```javascript
@@ -28,7 +28,7 @@ Converts a string separated by dashes and/or underscores into a camelCase equiva
 ```
 
 
-### capitalize() ###
+#### capitalize()
 Capitalizes the first letter of a string and downcases all the others.
 
 ```javascript
@@ -36,7 +36,7 @@ Capitalizes the first letter of a string and downcases all the others.
 ```
 
 
-### collapseSpaces() ###
+#### collapseSpaces()
 Converts all adjacent whitespace characters to a single space.
 
 ```javascript
@@ -44,7 +44,7 @@ Converts all adjacent whitespace characters to a single space.
 ```
 
 
-### format(`substrings`) ###
+#### format(`substrings`)
 Substitute substrings from an array into a format String that includes '%1'-type specifiers
 
 ```javascript
@@ -52,7 +52,7 @@ Substitute substrings from an array into a format String that includes '%1'-type
 ```
 
 
-### ltrim(`String` ch) ###
+#### ltrim(`String` ch)
 Removes leading whitespace.
 
 ```javascript
@@ -61,7 +61,7 @@ Removes leading whitespace.
 ```
 
 
-### pad(`Int` length, `String` ch, `Int` direction) ###
+#### pad(`Int` length, `String` ch, `Int` direction)
 Pad a string up to a given length. Padding characters are added to the left of the string.
 
 ```javascript
@@ -70,7 +70,7 @@ Pad a string up to a given length. Padding characters are added to the left of t
 ```
 
 
-### remove(`Int` start, `Int` length) ###
+#### remove(`Int` start, `Int` length)
 Removes a specified length of characters from a given postion.
 
 ```javascript
@@ -78,7 +78,7 @@ Removes a specified length of characters from a given postion.
 ```
 
 
-### repeat(`Int` count, `String` separator) ###
+#### repeat(`Int` count, `String` separator)
 Returns 'str' repeated 'count' times, optionally placing 'separator' between each repetition
 
 ```javascript
@@ -87,7 +87,7 @@ Returns 'str' repeated 'count' times, optionally placing 'separator' between eac
 ```
 
 
-### reverse() ###
+#### reverse()
 Reverses the characters in the specified string.
 
 ```javascript
@@ -95,7 +95,7 @@ Reverses the characters in the specified string.
 ```
 
 
-### rtrim(`String` ch) ###
+#### rtrim(`String` ch)
 Removes trailing whitespace.
 
 ```javascript
@@ -104,7 +104,7 @@ Removes trailing whitespace.
 ```
 
 
-### stripTags() ###
+#### stripTags()
 Returns a string with all HTML tags stripped.
 
 ```javascript
@@ -112,7 +112,7 @@ Returns a string with all HTML tags stripped.
 ```
 
 
-### trim(`String` ch) ###
+#### trim(`String` ch)
 Returns a String with with leading and trailing whitespace removed.
 
 ```javascript
@@ -121,7 +121,7 @@ Returns a String with with leading and trailing whitespace removed.
 ```
 
 
-### truncate(`Number` length, `String` suffix) ###
+#### truncate(`Number` length, `String` suffix)
 Returns a string that is no longer than a certain length.
 
 ```javascript
@@ -134,7 +134,7 @@ base64.js methods
 -------
 Extends string prototype with the following methods: encodeBase64, decodeBase64
 
-### encodeBase64()
+#### encodeBase64()
 Encodes a string using Base64.
 
 ```javascript
@@ -142,7 +142,7 @@ Encodes a string using Base64.
 ```
 
 
-### decodeBase64()
+#### decodeBase64()
 Decodes a Base64 encoded string to a byte string.
 
 ```javascript
@@ -154,7 +154,7 @@ md5.js methods
 -------
 Extends string prototype with the following method: md5
 
-### md5()
+#### md5()
 Returns the md5 hash of the given string.
 
 ```javascript
@@ -166,14 +166,14 @@ utf8.js methods
 -------
 Extends string prototype with the following method: utf8
 
-### encodeUTF8()
+#### encodeUTF8()
 Encodes a multi-byte string into utf-8 multiple single-byte characters.
 
 ```javascript
 "Straße".encodeUTF8(); // "StraÃe"
 ```
 
-### decodeUTF8()
+#### decodeUTF8()
 Decodes a utf-8 encoded string back into multi-byte characters.
 
 ```javascript
@@ -186,14 +186,14 @@ char.js methods
 Char extensions convert between characters and decimal Numeric Character References.
 Extends string prototype with the following methods: char2dec, dec2char
 
-### char2dec()
+#### char2dec()
 Convert Character to Decimal.
 
 ```javascript
 "JavaScript".char2dec(); // "&#74;&#97;&#118;&#97;&#83;&#99;&#114;&#105;&#112;&#116;"
 ```
 
-### dec2char()
+#### dec2char()
 Convert Decimal to Character.
 
 ```javascript
@@ -205,14 +205,14 @@ array.js methods
 -------
 Extends array prototype with the following methods: contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
 
-### contains(`Array` elements)
+#### contains(`Array` elements)
 Returns true if every element in 'elements' is in the array.
 
 ```javascript
 [1, 2, 1, 4, 5, 4].contains([1, 2, 4]); // true
 ```
 
-### exfiltrate(`Array` elements)
+#### exfiltrate(`Array` elements)
 Returns the array without the elements in 'elements'.
 
 ```javascript
@@ -220,7 +220,7 @@ Returns the array without the elements in 'elements'.
 ```
 
 
-### every(`Function` fn, `Object` scope)
+#### every(`Function` fn, `Object` scope)
 Tests whether all elements in the array pass the test implemented by the provided function.
 
 ```javascript
@@ -234,7 +234,7 @@ Tests whether all elements in the array pass the test implemented by the provide
 ```
 
 
-### filter(`Function` fn, `Object` scope)
+#### filter(`Function` fn, `Object` scope)
 Creates a new array with all elements that pass the test implemented by the provided function.
 
 ```javascript
@@ -244,7 +244,7 @@ Creates a new array with all elements that pass the test implemented by the prov
 ```
 
 
-### forEach(`Function` fn, `Object` scope)
+#### forEach(`Function` fn, `Object` scope)
 Executes a provided function once per array element.
 
 ```javascript
@@ -255,7 +255,7 @@ var stuff = "";
 ```
 
 
-### getRange(`Number` startIndex, `Number` endIndex)
+#### getRange(`Number` startIndex, `Number` endIndex)
 Returns a range of items in this collection.
 
 ```javascript
@@ -263,7 +263,7 @@ Returns a range of items in this collection.
 ```
 
 
-### indexOf(`Object` subject, `Number` offset)
+#### indexOf(`Object` subject, `Number` offset)
 Returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 ```javascript
@@ -272,7 +272,7 @@ Returns the first index at which a given element can be found in the array, or -
 ```
 
 
-### inArray(`Object` subject)
+#### inArray(`Object` subject)
 Checks if a given subject can be found in the array.
 
 ```javascript
@@ -281,7 +281,7 @@ Checks if a given subject can be found in the array.
 ```
 
 
-### insertAt(`Number` index, `Object` element)
+#### insertAt(`Number` index, `Object` element)
 Inserts an item at the specified index in the array
 
 ```javascript
@@ -289,7 +289,7 @@ Inserts an item at the specified index in the array
 ```
 
 
-### map(`Function` fn, `Object` scope)
+#### map(`Function` fn, `Object` scope)
 Creates a new array with the results of calling a provided function on every element in this array.
 
 ```javascript
@@ -301,7 +301,7 @@ Creates a new array with the results of calling a provided function on every ele
 ```
 
 
-### removeAt(`Number` index)
+#### removeAt(`Number` index)
 Remove an item from a specified index in the array.
 
 ```javascript
@@ -309,7 +309,7 @@ Remove an item from a specified index in the array.
 ```
 
 
-### randomize()
+#### randomize()
 Randomize the order of the elements in the Array.
 
 ```javascript
@@ -317,7 +317,7 @@ Randomize the order of the elements in the Array.
 ```
 
 
-##### some(`Function` fn, `Object` scope)
+#### some(`Function` fn, `Object` scope)
 Tests whether some element in the array passes the test implemented by the provided function.
 
 ```javascript
@@ -329,6 +329,7 @@ Tests whether some element in the array passes the test implemented by the provi
 	return element >= 100;
 }); // true;
 ```
+
 
 
 #### unique()
