@@ -353,3 +353,9 @@ Returns a new array that contains all unique elements of this array.
 ```javascript
 [1, 2, 1, 4, 5, 4].unique(); // [1, 2, 4, 5]
 ```
+
+
+Have a bug? Please create an issue here on GitHub!
+--------------------------------------------------
+[https://github.com/harrydeluxe/js-methods/issues](https://github.com/harrydeluxe/js-methods/issues)
+
