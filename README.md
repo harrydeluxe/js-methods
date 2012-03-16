@@ -7,7 +7,7 @@ Usage
 -------
 #### Browsers
 
-If you need 'string' and 'array' methods, put this lines to your scripts.
+If you need 'string' and 'array' methods, put this lines to your script.
 
 ```html
 <script src="https://raw.github.com/harrydeluxe/js-methods/master/string.min.js"></script>
@@ -22,13 +22,17 @@ Installation
 npm install --production js-methods
 ```
 
+
+
 ```javascript
 require('js-methods'); // Now you have all methods to dispose. Try it!
 "javascript".md5(); // 'de9b9ed78d7e2e1dceeffee780e2f919'
 ```
 
-string.js
+Docs
 -------
+
+## string.js
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
