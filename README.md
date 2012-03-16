@@ -6,14 +6,18 @@
 Usage
 -------
 #### Browsers
+
 If you need 'string' and 'array' methods, put this lines to your scripts.
+
 ```html
 <script src="https://raw.github.com/harrydeluxe/js-methods/master/string.min.js"></script>
 <script src="https://raw.github.com/harrydeluxe/js-methods/master/array.min.js"></script>
 ```
 
 #### Node.js
+
 Installation
+
 ```javascript
 npm install --production js-methods
 ```
