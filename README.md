@@ -19,7 +19,6 @@ Extends string prototype with the following methods: camelize, capitalize, colla
 The `string.min.js` is super lightweight (< 1k Gzipped).
 
 ### camelize()
-
 Converts a string separated by dashes and/or underscores into a camelCase equivalent. For instance, 'java-script' would be converted to 'javaScript'.
 
 ```javascript
@@ -30,7 +29,6 @@ Converts a string separated by dashes and/or underscores into a camelCase equiva
 
 
 ### capitalize() ###
-
 Capitalizes the first letter of a string and downcases all the others.
 
 ```javascript
@@ -39,7 +37,6 @@ Capitalizes the first letter of a string and downcases all the others.
 
 
 ### collapseSpaces() ###
-
 Converts all adjacent whitespace characters to a single space.
 
 ```javascript
@@ -47,8 +44,7 @@ Converts all adjacent whitespace characters to a single space.
 ```
 
 
-### format(substrings) ###
-
+### format(`substrings`) ###
 Substitute substrings from an array into a format String that includes '%1'-type specifiers
 
 ```javascript
@@ -56,8 +52,7 @@ Substitute substrings from an array into a format String that includes '%1'-type
 ```
 
 
-### ltrim(String ch) ###
-
+### ltrim(`String` ch) ###
 Removes leading whitespace.
 
 ```javascript
@@ -66,7 +61,7 @@ Removes leading whitespace.
 ```
 
 
-### pad(Int length, String ch, Int direction) ###
+### pad(`Int` length, `String` ch, `Int` direction) ###
 Pad a string up to a given length. Padding characters are added to the left of the string.
 
 ```javascript
@@ -75,7 +70,7 @@ Pad a string up to a given length. Padding characters are added to the left of t
 ```
 
 
-### remove(Int start, Int length) ###
+### remove(`Int` start, `Int` length) ###
 Removes a specified length of characters from a given postion.
 
 ```javascript
@@ -83,7 +78,7 @@ Removes a specified length of characters from a given postion.
 ```
 
 
-### repeat(Int count, String separator) ###
+### repeat(`Int` count, `String` separator) ###
 Returns 'str' repeated 'count' times, optionally placing 'separator' between each repetition
 
 ```javascript
@@ -100,7 +95,7 @@ Reverses the characters in the specified string.
 ```
 
 
-### rtrim(String ch) ###
+### rtrim(`String` ch) ###
 Removes trailing whitespace.
 
 ```javascript
@@ -117,7 +112,7 @@ Returns a string with all HTML tags stripped.
 ```
 
 
-### trim(String ch) ###
+### trim(`String` ch) ###
 Returns a String with with leading and trailing whitespace removed.
 
 ```javascript
@@ -126,7 +121,7 @@ Returns a String with with leading and trailing whitespace removed.
 ```
 
 
-### truncate(Number length, String suffix) ###
+### truncate(`Number` length, `String` suffix) ###
 Returns a string that is no longer than a certain length.
 
 ```javascript
@@ -210,14 +205,14 @@ array.js methods
 -------
 Extends array prototype with the following methods: contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
 
-### contains(Array elements)
+### contains(`Array` elements)
 Returns true if every element in 'elements' is in the array.
 
 ```javascript
 [1, 2, 1, 4, 5, 4].contains([1, 2, 4]); // true
 ```
 
-### exfiltrate(Array elements)
+### exfiltrate(`Array` elements)
 Returns the array without the elements in 'elements'.
 
 ```javascript
@@ -225,7 +220,7 @@ Returns the array without the elements in 'elements'.
 ```
 
 
-### every(Function fn, Object scope)
+### every(`Function` fn, `Object` scope)
 Tests whether all elements in the array pass the test implemented by the provided function.
 
 ```javascript
@@ -239,7 +234,7 @@ Tests whether all elements in the array pass the test implemented by the provide
 ```
 
 
-### filter(Function fn, Object scope)
+### filter(`Function` fn, `Object` scope)
 Creates a new array with all elements that pass the test implemented by the provided function.
 
 ```javascript
@@ -249,7 +244,7 @@ Creates a new array with all elements that pass the test implemented by the prov
 ```
 
 
-### forEach(Function fn, Object scope)
+### forEach(`Function` fn, `Object` scope)
 Executes a provided function once per array element.
 
 ```javascript
@@ -260,7 +255,7 @@ var stuff = "";
 ```
 
 
-### getRange(Number startIndex, Number endIndex)
+### getRange(`Number` startIndex, `Number` endIndex)
 Returns a range of items in this collection.
 
 ```javascript
@@ -268,7 +263,7 @@ Returns a range of items in this collection.
 ```
 
 
-### indexOf(Object subject, Number offset)
+### indexOf(`Object` subject, `Number` offset)
 Returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 ```javascript
@@ -277,7 +272,7 @@ Returns the first index at which a given element can be found in the array, or -
 ```
 
 
-### inArray(Object subject)
+### inArray(`Object` subject)
 Checks if a given subject can be found in the array.
 
 ```javascript
@@ -286,7 +281,7 @@ Checks if a given subject can be found in the array.
 ```
 
 
-### insertAt(Number index, Object element)
+### insertAt(`Number` index, `Object` element)
 Inserts an item at the specified index in the array
 
 ```javascript
@@ -336,7 +331,7 @@ Tests whether some element in the array passes the test implemented by the provi
 ```
 
 
-### unique()
+## unique()
 Returns a new array that contains all unique elements of this array.
 
 ```javascript
