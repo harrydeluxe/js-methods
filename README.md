@@ -317,7 +317,7 @@ Randomize the order of the elements in the Array.
 ```
 
 
-### some(`Function` fn, `Object` scope)
+##### some(`Function` fn, `Object` scope)
 Tests whether some element in the array passes the test implemented by the provided function.
 
 ```javascript
@@ -331,7 +331,7 @@ Tests whether some element in the array passes the test implemented by the provi
 ```
 
 
-## unique()
+#### unique()
 Returns a new array that contains all unique elements of this array.
 
 ```javascript
