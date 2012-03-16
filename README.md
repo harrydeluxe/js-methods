@@ -30,14 +30,14 @@ require('js-methods'); // Now you have all methods to dispose. Try it!
 ```
 
 Docs
-----
+====
 
-### string.js
+## string.js
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
 
-#### camelize()
+##### camelize()
 Converts a string separated by dashes and/or underscores into a camelCase equivalent. For instance, 'java-script' would be converted to 'javaScript'.
 
 ```javascript
@@ -47,7 +47,7 @@ Converts a string separated by dashes and/or underscores into a camelCase equiva
 ```
 
 
-#### capitalize()
+##### capitalize()
 Capitalizes the first letter of a string and downcases all the others.
 
 ```javascript
