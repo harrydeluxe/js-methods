@@ -332,7 +332,7 @@ Tests whether some element in the array passes the test implemented by the provi
 
 [101, 99, 250, 200].some(function(element, index, array) {
 	return element >= 100;
-}); // false;
+}); // true;
 ```
 
 

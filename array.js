@@ -249,7 +249,7 @@
 	/**
 	* Remove an item from a specified index in the array.
 	*
-	* @example ['dog', 'cat', 'mouse', 'horse'].deleteAt(2);
+	* @example ['dog', 'cat', 'mouse', 'horse'].removeAt(2);
 	* @result ['dog', 'cat', 'horse']
 	*
 	* @name removeAt
@@ -293,7 +293,7 @@
 	* @example [101, 99, 250, 200].some(function(element, index, array) {
 	*   return element >= 100;
 	* });
-	* @result false;
+	* @result true;
 	*
 	* @name some
 	* @param Function fn The function to be called for each element.
