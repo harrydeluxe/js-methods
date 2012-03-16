@@ -186,5 +186,159 @@ Decodes a utf-8 encoded string back into multi-byte characters.
 ```
 
 
+char.js methods
+-------
+Char extensions convert between characters and decimal Numeric Character References.
+Extends string prototype with the following methods: char2dec, dec2char
+
+### char2dec()
+Convert Character to Decimal.
+
+```javascript
+"JavaScript".char2dec(); // "&#74;&#97;&#118;&#97;&#83;&#99;&#114;&#105;&#112;&#116;"
+```
+
+### dec2char()
+Convert Decimal to Character.
+
+```javascript
+"&#74;&#97;&#118;&#97;&#83;&#99;&#114;&#105;&#112;&#116;".dec2char(); // "JavaScript"
+```
 
 
+array.js methods
+-------
+Extends array prototype with the following methods: contains, every, exfiltrate, filter, forEach, getRange, inArray, indexOf, insertAt, map, randomize, removeAt, some, unique
+
+### contains(Array elements)
+Returns true if every element in 'elements' is in the array.
+
+```javascript
+[1, 2, 1, 4, 5, 4].contains([1, 2, 4]); // true
+```
+
+### exfiltrate(Array elements)
+Returns the array without the elements in 'elements'.
+
+```javascript
+[1, 2, 1, 4, 5, 4].exfiltrate([1, 2, 4]); // 5
+```
+
+
+### every(Function fn, Object scope)
+Tests whether all elements in the array pass the test implemented by the provided function.
+
+```javascript
+[22, 72, 16, 99, 254].every(function(element, index, array) {
+	return element >= 15;
+}); // true
+
+[12, 72, 16, 99, 254].every(function(element, index, array) {
+	return element >= 15;
+}); // false
+```
+
+
+### filter(Function fn, Object scope)
+Creates a new array with all elements that pass the test implemented by the provided function.
+
+```javascript
+[12, 5, 8, 1, 44].filter(function(element, index, array) {
+	return element >= 10;
+}); // [12, 44];
+```
+
+
+### forEach(Function fn, Object scope)
+Executes a provided function once per array element.
+
+```javascript
+var stuff = "";
+["Java", "Script"].forEach(function(element, index, array) {
+	stuff += element;
+}); // "JavaScript";
+```
+
+
+### getRange(Number startIndex, Number endIndex)
+Returns a range of items in this collection.
+
+```javascript
+[1, 2, 1, 4, 5, 4].getRange(2, 4); // [1, 4, 5]
+```
+
+
+### indexOf(Object subject, Number offset)
+Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+```javascript
+[12, 5, 8, 5, 44].indexOf(5); // 1
+[12, 5, 8, 5, 44].indexOf(5, 2); // 3
+```
+
+
+### inArray(Object subject)
+Checks if a given subject can be found in the array.
+
+```javascript
+[12, 5, 7, 5].inArray(7); // true
+[12, 5, 7, 5].inArray(9); // false
+```
+
+
+### insertAt(Number index, Object element)
+Inserts an item at the specified index in the array
+
+```javascript
+['dog', 'cat', 'horse'].insertAt(2, 'mouse'); // ['dog', 'cat', 'mouse', 'horse']
+```
+
+
+### map(Function fn, Object scope)
+Creates a new array with the results of calling a provided function on every element in this array.
+
+```javascript
+["my", "Name", "is", "HARRY"].map(function(element, index, array) {
+	return element.toUpperCase();
+}); // ["MY", "NAME", "IS", "HARRY"]
+
+[1, 4, 9].map(Math.sqrt); // [1, 2, 3]
+```
+
+
+### removeAt(Number index)
+Remove an item from a specified index in the array.
+
+```javascript
+['dog', 'cat', 'mouse', 'horse'].removeAt(2); // ['dog', 'cat', 'horse']
+```
+
+
+### randomize()
+Randomize the order of the elements in the Array.
+
+```javascript
+[2, 3, 4, 5].randomize(); // ??? [5, 2, 3, 4] randomized result
+```
+
+
+### some(Function fn, Object scope)
+Tests whether some element in the array passes the test implemented by the provided function.
+
+```javascript
+[101, 199, 250, 200].some(function(element, index, array) {
+	return element >= 100;
+}); // true;
+
+[101, 99, 250, 200].some(function(element, index, array) {
+	return element >= 100;
+}); // false;
+```
+
+
+### unique()
+Returns a new array that contains all unique elements of this array.
+
+```javascript
+[1, 2, 1, 4, 5, 4].unique(); // [1, 2, 4, 5]
+```
