@@ -33,7 +33,7 @@ Docs
 -------------
 
 
-### string.js
+## string.js ##
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
