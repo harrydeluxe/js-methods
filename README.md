@@ -4,7 +4,7 @@
 
 
 Usage
--------
+-----
 #### Browsers
 
 If you need 'string' and 'array' methods, put this lines to your script.
@@ -30,9 +30,9 @@ require('js-methods'); // Now you have all methods to dispose. Try it!
 ```
 
 Docs
--------
+----
 
-## string.js
+### string.js
 Extends string prototype with the following methods: camelize, capitalize, collapseSpaces, format, ltrim, pad, remove, repeat, reverse, rtrim, sprintf, stripTags, trim, truncate
 
 The `string.min.js` is super lightweight (< 1k Gzipped).
@@ -149,8 +149,7 @@ Returns a string that is no longer than a certain length.
 ```
 
 
-base64.js
--------
+### base64.js
 Extends string prototype with the following methods: encodeBase64, decodeBase64
 
 #### encodeBase64()
